@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "noEmitHelpers": false,
+        "sourceMap": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./node_modules/phaser/types"
+        ],
+        "outDir": "./dist",
+        "target": "es5",
+        "module": "umd",
+        "baseUrl": "./src",
+        "paths": {
+            "@root/*": [
+                "*"
+            ],
+            "@game/*": [
+                "game/*"
+            ],
+            "actions/*": [
+                "app/actions/*"
+            ],
+            "selectors/*": [
+                "app/selectors/*"
+            ],
+            "ui/*": [
+                "app/ui/*"
+            ],
+            "logger": [
+                "util/logger"
+            ],
+        }
+    },
+    "include": [
+        "./src"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
